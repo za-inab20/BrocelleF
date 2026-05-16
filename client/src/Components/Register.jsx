@@ -92,7 +92,7 @@ function Register() {
     }
 
     try {
-      await axios.post("http://localhost:8080/register", {
+      await axios.post("https://brocellef.onrender.com/register", {
         uname: name,
         email,
         password,
