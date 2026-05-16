@@ -47,7 +47,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8080/contact", formData);
+      await axios.post("https://brocellef.onrender.com/contact", formData);
 
       alert("Message sent successfully!");
 
