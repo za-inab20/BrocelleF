@@ -48,7 +48,7 @@ function Admin() {
 
   const fetchMessages = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/contact");
+      const response = await axios.get("https://brocellef.onrender.com/contact");
 
       setMessages(response.data);
     } catch (error) {
@@ -66,7 +66,7 @@ function Admin() {
     }
 
     try {
-      await axios.post("http://localhost:8080/api/products", {
+      await axios.post("https://brocellef.onrender.com/api/products", {
         title,
         price,
         image,
@@ -92,7 +92,7 @@ function Admin() {
     }
 
     try {
-      await axios.post("http://localhost:8080/courses", {
+      await axios.post("https://brocellef.onrender.com/courses", {
         title: courseTitle,
         duration: courseDuration,
         description: courseDescription,
